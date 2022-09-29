@@ -1,6 +1,6 @@
-name "starter"
-description "An example Chef role"
-run_list "recipe[starter]"
+name 'starter'
+description 'An example Chef role'
+run_list 'recipe[starter]'
 override_attributes({
-  "starter_name" => "Ullasa Poojith Sindhur",
+  'starter_name' => 'Ullasa Poojith Sindhur',
 })
