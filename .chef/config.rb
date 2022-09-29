@@ -7,3 +7,5 @@ node_name                "ullasasindhur"
 client_key               "#{current_dir}/ullasasindhur.pem"
 chef_server_url          "https://api.chef.io/organizations/ullasasindhur"
 cookbook_path            ["#{current_dir}/../cookbooks"]
+knife[:secret_file] = "#{current_dir}/secretfile"
+knife[:editor] = "notepad"
