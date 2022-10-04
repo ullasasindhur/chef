@@ -8,3 +8,8 @@ summary: An InSpec Compliance Profile
 version: 0.1.0
 supports:
   platform: os
+inputs:
+  - name: port_apache
+    value: 8080
+  - name: package_name
+    value: "apache2"
