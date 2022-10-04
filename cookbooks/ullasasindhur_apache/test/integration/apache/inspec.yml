@@ -1,0 +1,10 @@
+name: apache
+title: InSpec Profile
+maintainer: Ullasa Poojith Sindhur
+copyright: Ullasa Poojith Sindhur
+copyright_email: poojithullasa@gmail.com
+license: Apache-2.0
+summary: An InSpec Compliance Profile
+version: 0.1.0
+supports:
+  platform: os

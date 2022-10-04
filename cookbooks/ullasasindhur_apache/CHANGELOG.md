@@ -8,3 +8,7 @@ Initial release.
 
 - change 0
 - change 1
+
+## 0.2.0
+
+- Added test cases
