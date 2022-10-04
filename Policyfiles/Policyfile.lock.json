@@ -1,0 +1,142 @@
+{
+  "revision_id": "1888f167b77942d6e6c8e4fb2111c39f56c5b7073e5eb08ac7e05c1046d01d08",
+  "name": "assignment",
+  "run_list": [
+    "recipe[ullasasindhur_apache::default]",
+    "recipe[ullasasindhur_mysql::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "apparmor": {
+      "version": "4.1.0",
+      "identifier": "fe69a72e846a592ea0595310129dacce3481c9a3",
+      "dotted_decimal_identifier": "71610810845391449.13124154434785949.190001644161443",
+      "cache_key": "apparmor-4.1.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/apparmor/versions/4.1.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/apparmor/versions/4.1.0/download",
+        "version": "4.1.0"
+      }
+    },
+    "line": {
+      "version": "4.5.2",
+      "identifier": "ca6fbb2c7fa28ca4951bfba4558a3ab7caf85d21",
+      "dotted_decimal_identifier": "56980794991682188.46325843599054218.64561058700577",
+      "cache_key": "line-4.5.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/line/versions/4.5.2/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/line/versions/4.5.2/download",
+        "version": "4.5.2"
+      }
+    },
+    "mysql": {
+      "version": "11.0.5",
+      "identifier": "c51aec0d110addbad4033b960ad980ad58d39e3d",
+      "dotted_decimal_identifier": "55480171545823965.52587456017861337.141482007961149",
+      "cache_key": "mysql-11.0.5-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/mysql/versions/11.0.5/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/mysql/versions/11.0.5/download",
+        "version": "11.0.5"
+      }
+    },
+    "ullasasindhur_apache": {
+      "version": "0.2.0",
+      "identifier": "7ca72eb9824da2b0854002d7703846e8962b8eaf",
+      "dotted_decimal_identifier": "35086716234780066.49686105873150008.77964765793967",
+      "source": "../cookbooks/ullasasindhur_apache",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "git@github.com:ullasasindhur/chef.git",
+        "revision": "883d3babce08a3f2b9453ff5649eb8b513a98018",
+        "working_tree_clean": false,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "../cookbooks/ullasasindhur_apache"
+      }
+    },
+    "ullasasindhur_mysql": {
+      "version": "0.2.0",
+      "identifier": "31eb212920673b02a9045fc6ca8cb77c82227984",
+      "dotted_decimal_identifier": "14050801515259707.748786205248140.201745387125124",
+      "source": "../cookbooks/ullasasindhur_mysql",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "git@github.com:ullasasindhur/chef.git",
+        "revision": "883d3babce08a3f2b9453ff5649eb8b513a98018",
+        "working_tree_clean": false,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "../cookbooks/ullasasindhur_mysql"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "apparmor",
+        "= 4.1.0"
+      ],
+      [
+        "line",
+        "= 4.5.2"
+      ],
+      [
+        "mysql",
+        "= 11.0.5"
+      ],
+      [
+        "ullasasindhur_apache",
+        ">= 0.0.0"
+      ],
+      [
+        "ullasasindhur_mysql",
+        ">= 0.0.0"
+      ]
+    ],
+    "dependencies": {
+      "apparmor (4.1.0)": [
+        [
+          "line",
+          ">= 0.0.0"
+        ]
+      ],
+      "line (4.5.2)": [
+
+      ],
+      "mysql (11.0.5)": [
+        [
+          "apparmor",
+          ">= 0.0.0"
+        ]
+      ],
+      "ullasasindhur_apache (0.2.0)": [
+
+      ],
+      "ullasasindhur_mysql (0.2.0)": [
+        [
+          "mysql",
+          "~> 11.0.5"
+        ]
+      ]
+    }
+  }
+}
