@@ -1,15 +1,16 @@
 require 'chefspec'
 
 describe 'ullasasindhur_apache::install' do
+  let(:node) { subject.node }
   let(:chef_run) { ChefSpec::SoloRunner.new(platform: 'ubuntu', version: '20.04').converge(described_recipe) }
-  # let(:package_name) { node['ullasasindhur_apache']['package_name'] }
-  # let(:service_name) { node['ullasasindhur_apache']['service_name'] }
+  let(:package_name) { node['ullasasindhur_apache']['package_name'] }
+  let(:service_name) { node['ullasasindhur_apache']['service_name'] }
   context 'Package' do
     it 'will package install?' do
-      expect(chef_run).to install_package('apache2')
+      expect(chef_run).to install_package(package_name)
     end
     it 'will service start?' do
-      expect(chef_run).to start_service('apache2')
+      expect(chef_run).to start_service(service_name)
     end
   end
   context 'template files' do
