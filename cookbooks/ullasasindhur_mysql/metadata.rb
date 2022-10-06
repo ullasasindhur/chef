@@ -5,7 +5,7 @@ license 'All Rights Reserved'
 description 'Installs/Configures ullasasindhur_mysql'
 version '0.2.0'
 chef_version '>= 16.0'
-depends 'mysql', '~> 11.0.5'
+depends 'mysql', '= 10.1.4'
 
 # The `issues_url` points to the location where issues for this cookbook are
 # tracked.  A `View Issues` link will be displayed on this cookbook's page when
