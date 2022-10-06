@@ -15,7 +15,6 @@
 # limitations under the License.
 #
 provides :mysql_database
-unified_mode true
 
 include MysqlCookbook::HelpersBase
 include MysqlCookbook
@@ -57,7 +56,7 @@ action :drop do
 end
 
 action :query do
-  run_query(new_resource.sql, new_resource.database_name)
+  run_query(new_resource.sql, nil)
 end
 
 load_current_value do

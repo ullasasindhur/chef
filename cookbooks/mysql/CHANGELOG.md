@@ -2,38 +2,6 @@
 
 All notable changes to this project will be documented in this file.
 
-## 11.0.5 - *2022-04-20*
-
-Standardise files with files in sous-chefs/repo-management
-
-## 11.0.4 - *2022-02-09*
-
-- Allow run_query to take a database name as an argument
-
-## 11.0.3 - *2022-02-02*
-
-- Remove delivery and move to calling RSpec directly via a reusable workflow
-- Update tested platforms
-
-## 11.0.2 - *2022-01-27*
-
-- resolved cookstyle error: spec/mysql_client_installation_package_spec.rb:6:46 warning: `Chef/Deprecations/DeprecatedChefSpecPlatform`
-- resolved cookstyle error: spec/mysql_server_installation_package_spec.rb:6:46 warning: `Chef/Deprecations/DeprecatedChefSpecPlatform`
-- Stop specifying the Fedora version, so we default to latest
-
-## 11.0.1 - *2022-01-08*
-
-- resolved cookstyle error: test/cookbooks/test/libraries/helpers.rb:14:31 convention: `Style/FileRead`
-- resolved cookstyle error: test/cookbooks/test/libraries/helpers.rb:26:31 convention: `Style/FileRead`
-
-## 11.0.0 - *2021-09-16*
-
-- resolved cookstyle error: libraries/mysql_service_base.rb:44:20 refactor: `Chef/Modernize/UseChefLanguageSystemdHelper`
-- Chef 17 updates: enable `unified_mode` on all resources
-- Bump required Chef Infra Client to >= 15.5
-- resolved cookstyle error: resources/mysql_database.rb:1:1 refactor: `Chef/Deprecations/ResourceWithoutUnifiedTrue`
-- resolved cookstyle error: resources/mysql_user.rb:1:1 refactor: `Chef/Deprecations/ResourceWithoutUnifiedTrue`
-
 ## 10.1.4 - *2021-08-30*
 
 - Standardise files with files in sous-chefs/repo-management
