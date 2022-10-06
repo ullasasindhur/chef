@@ -13,3 +13,7 @@ Initial release.
 
 - removed version
 - added package name
+
+## 0.3.0
+
+- added old mysql dependencies

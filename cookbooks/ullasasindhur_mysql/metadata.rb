@@ -3,7 +3,7 @@ maintainer 'Ullasa Poojith Sindhur'
 maintainer_email 'poojithullasa@gmail.com'
 license 'All Rights Reserved'
 description 'Installs/Configures ullasasindhur_mysql'
-version '0.2.0'
+version '0.3.0'
 chef_version '>= 16.0'
 depends 'mysql', '= 10.1.4'
 

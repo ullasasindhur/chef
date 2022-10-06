@@ -14,21 +14,21 @@ mysql_service 'default' do
   action [:create, :start]
 end
 
-mysql_database database do
-  user 'root'
-  password password
-  action :create
-end
+# mysql_database database do
+#   user 'root'
+#   password password
+#   action :create
+# end
 
-mysql_user user do
-  password userPassword
-  action :create
-end
+# mysql_user user do
+#   password userPassword
+#   action :create
+# end
 
-mysql_user user do
-  password userPassword
-  database_name database
-  host '%'
-  privileges [:select, :update, :insert]
-  action :grant
-end
+# mysql_user user do
+#   password userPassword
+#   database_name database
+#   host '%'
+#   privileges [:select, :update, :insert]
+#   action :grant
+# end
