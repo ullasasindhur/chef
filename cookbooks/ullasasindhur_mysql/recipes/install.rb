@@ -1,8 +1,8 @@
 credentials = data_bag_item('credentials', 'mysql-credentials')
 password = credentials['root-password']
-database = credentials['database']
-userPassword = credentials['user-password']
-user = credentials['custom-user']
+# database = credentials['database']
+# userPassword = credentials['user-password']
+# user = credentials['custom-user']
 
 mysql_service 'default' do
   bind_address '0.0.0.0'

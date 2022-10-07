@@ -9,7 +9,6 @@ name 'assignment'
 # Where to find external cookbooks:
 default_source :supermarket
 
-
 # run_list: chef-client will run these recipes in the order specified.
 run_list 'recipe[ullasasindhur_apache]', 'recipe[ullasasindhur_mysql]'
 
